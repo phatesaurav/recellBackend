@@ -28,11 +28,6 @@ import lombok.ToString;
 
 @Entity
 @Table(name = "users")
-@NoArgsConstructor
-@AllArgsConstructor
-@Getter
-@Setter
-@ToString
 public class User {
 
 	@Id
@@ -73,9 +68,7 @@ public class User {
 
 	private LocalDateTime createdAt;
 
-	public User() {
-
-	}
+	
 
 	public User(Long id, String firstName, String lastName, String password, String email, UserRole role, String mobile,
 			List<Address> addresses, List<PaymentInformation> paymentInformation, List<Rating> ratings,
