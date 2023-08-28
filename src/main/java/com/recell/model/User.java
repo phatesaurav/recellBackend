@@ -68,7 +68,9 @@ public class User {
 
 	private LocalDateTime createdAt;
 
-	
+	public User() {
+
+	}
 
 	public User(Long id, String firstName, String lastName, String password, String email, UserRole role, String mobile,
 			List<Address> addresses, List<PaymentInformation> paymentInformation, List<Rating> ratings,
